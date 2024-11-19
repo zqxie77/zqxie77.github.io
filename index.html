@@ -1,69 +1,58 @@
-export default function PersonalHomepage() {
-  return (
-    <div className="min-h-screen p-6 max-w-[1000px] mx-auto">
-      {/* Navigation */}
-      <nav className="mb-10 flex justify-center gap-6">
-        <a href="#home" className="text-gray-800 hover:text-gray-600">Home</a>
-        <a href="#education" className="text-gray-800 hover:text-gray-600">Education</a>
-      </nav>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 10px;
+        }
+        .content {
+            margin-bottom: 40px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#education">Education</a>
+    </nav>
 
-      {/* Main Content */}
-      <main>
-        {/* Home Section */}
-        <section id="home" className="mb-12">
-          <h1 className="text-3xl font-bold mb-6">
-            Zequn Xie (谢泽群)
-          </h1>
-          
-          <div className="space-y-3">
-            <p>
-              <span className="font-semibold">Research Interests: </span>
-              Noisy Correspondence Learning, Cross-modal Retrieval, Generative Models
-            </p>
-            <p>
-              <span className="font-semibold">Address: </span>
-              Hangzhou, Zhejiang Province
-            </p>
-            <p>
-              <span className="font-semibold">Email: </span>
-              zqxie@zju.edu.cn
-            </p>
-          </div>
-        </section>
+    <div class="content">
+        <h1>Zequn Xie (谢泽群)</h1>
 
-        {/* Education Section */}
-        <section id="education" className="mb-12">
-          <h2 className="text-2xl font-bold mb-6">Education</h2>
-          
-          <div className="space-y-2">
-            <h3 className="text-xl font-semibold">Master</h3>
-            <p>College of Computer Science, Zhejiang University</p>
-            <p className="text-gray-600">Sept 2024 - July 2027 • Hangzhou, China</p>
-            <p>Supervised by Ph.D. Tao Jin and Prof. Zhou Zhao</p>
-          </div>
-        </section>
-      </main>
+        <p>Research Interests: Noisy Correspondence Learning, Cross-modal Retrieval, Generative Models</p>
+        <p>Address: Hangzhou, Zhejiang Province</p>
+        <p>Email: zqxie@zju.edu.cn</p>
 
-      {/* Footer with Counter */}
-      <footer className="text-center mt-16 border-t pt-8">
-        <div>
-          <a href="https://www.easycounter.com/" className="inline-block mb-2">
-            <img 
-              src="https://www.easycounter.com/counter.php?zexie" 
-              alt="Web Counter" 
-              className="inline"
-            />
-          </a>
-          <div>
-            <a 
-              href="https://www.easycounter.com/" 
-              className="text-gray-600 hover:text-gray-800"
-            >
-              Free Web Counters
-            </a>
-          </div>
-        </div>
-      </footer>
+        <h2>Education</h2>
+        <p>
+            Master<br>
+            College of Computer Science, Zhejiang University<br>
+            Sept 2024 - July 2027 • Hangzhou, China<br>
+            Supervised by Ph.D. Tao Jin and Prof. Zhou Zhao
+        </p>
     </div>
-  );
-}
+
+    <div class="footer">
+        <a href="https://www.easycounter.com/">
+            <img src="https://www.easycounter.com/counter.php?zexie" border="0" alt="Web Counter">
+        </a>
+        <br>
+    </div>
+</body>
+</html>
