@@ -1,21 +1,19 @@
 export default function PersonalHomepage() {
   return (
-    <div className="min-h-screen bg-gray-50 font-sans text-gray-800">
+    <div className="min-h-screen p-6 max-w-[1000px] mx-auto">
       {/* Navigation */}
-      <nav className="sticky top-0 bg-white shadow-sm z-50">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="flex justify-center space-x-8 py-4">
-            <a href="#home" className="font-medium hover:text-gray-600 transition-colors">Home</a>
-            <a href="#education" className="font-medium hover:text-gray-600 transition-colors">Education</a>
-          </div>
-        </div>
+      <nav className="mb-10 flex justify-center gap-6">
+        <a href="#home" className="text-gray-800 hover:text-gray-600">Home</a>
+        <a href="#education" className="text-gray-800 hover:text-gray-600">Education</a>
       </nav>
 
       {/* Main Content */}
-      <main className="max-w-5xl mx-auto px-4 py-8">
+      <main>
         {/* Home Section */}
         <section id="home" className="mb-12">
-          <h1 className="text-3xl font-bold mb-6">Zequn Xie (谢泽群)</h1>
+          <h1 className="text-3xl font-bold mb-6">
+            Zequn Xie (谢泽群)
+          </h1>
           
           <div className="space-y-3">
             <p>
@@ -37,42 +35,33 @@ export default function PersonalHomepage() {
         <section id="education" className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Education</h2>
           
-          <div className="bg-white p-6 rounded-lg shadow-sm">
-            <div className="mb-4">
-              <h3 className="text-lg font-semibold">Master</h3>
-              <p className="text-gray-600">College of Computer Science, Zhejiang University</p>
-              <p className="text-gray-500 text-sm mt-1">Sept 2024 - July 2027 • Hangzhou, China</p>
-              <p className="text-gray-600 mt-2">
-                Supervised by Ph.D. Tao Jin and Prof. Zhou Zhao
-              </p>
-            </div>
+          <div className="space-y-2">
+            <h3 className="text-xl font-semibold">Master</h3>
+            <p>College of Computer Science, Zhejiang University</p>
+            <p className="text-gray-600">Sept 2024 - July 2027 • Hangzhou, China</p>
+            <p>Supervised by Ph.D. Tao Jin and Prof. Zhou Zhao</p>
           </div>
         </section>
       </main>
 
       {/* Footer with Counter */}
-      <footer className="border-t border-gray-200 mt-auto py-6">
-        <div className="flex flex-col items-center justify-center space-y-2">
-          <a 
-            href="https://www.easycounter.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block"
-          >
+      <footer className="text-center mt-16 border-t pt-8">
+        <div>
+          <a href="https://www.easycounter.com/" className="inline-block mb-2">
             <img 
               src="https://www.easycounter.com/counter.php?zexie" 
-              alt="Web Counter"
-              className="border-0"
+              alt="Web Counter" 
+              className="inline"
             />
           </a>
-          <a 
-            href="https://www.easycounter.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-500 hover:text-gray-700 text-sm"
-          >
-            Free Web Counters
-          </a>
+          <div>
+            <a 
+              href="https://www.easycounter.com/" 
+              className="text-gray-600 hover:text-gray-800"
+            >
+              Free Web Counters
+            </a>
+          </div>
         </div>
       </footer>
     </div>
