@@ -1,116 +1,80 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>personal homepage</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
-            background-color: #f9f9f9; /* 更柔和的背景色 */
-        }
-
-        nav {
-            text-align: center;
-            margin-bottom: 40px;
-            padding: 10px 0;
-            border-bottom: 1px solid #ddd;
-            position: sticky;
-            top: 0;
-            background: #ffffff;
-            z-index: 100;
-        }
-
-        nav a {
-            color: #333;
-            text-decoration: none;
-            margin: 0 25px;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #555;
-        }
-
-        h1, h2 {
-            margin: 20px 0 15px 0;
-            color: #333;
-        }
-
-        section {
-            scroll-margin-top: 70px;
-        }
-
-        p {
-            margin-bottom: 12px;
-            color: #555;
-        }
-
-        .education-item {
-            margin-bottom: 20px;
-            padding-left: 20px;
-        }
-
-        .section {
-            margin-bottom: 40px;
-        }
-
-        .info-label {
-            font-weight: bold;
-            color: #333;
-            margin-right: 8px;
-        }
-
-        .date-location, .supervisor {
-            color: #666;
-        }
-    </style>
-</head>
-<body>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#education">Education</a>
-    </nav>
-
-    <section id="home" class="section">
-        <h1>Zequn Xie (谢泽群)</h1>
-        <p><span class="info-label">Research Interests:</span>Noisy Correspondence Learning, Cross-modal Retrieval, Generative Models</p>
-        <p><span class="info-label">Address:</span>Hangzhou, Zhejiang Province</p>
-        <p><span class="info-label">Email:</span>zqxie@zju.edu.cn</p>
-    </section>
-
-    <section id="education" class="section">
-        <h2>Education</h2>
-        <div class="education-item">
-            <strong>Master</strong> at College of Computer Science, Zhejiang University<br>
-            <div class="date-location">Sept 2024 - July 2027 &nbsp;&nbsp;&nbsp; Hangzhou, China</div>
-            <div class="supervisor">Supervised by Ph.D. Tao Jin and Prof. Zhou Zhao</div>
+export default function PersonalHomepage() {
+  return (
+    <div className="min-h-screen bg-gray-50 font-sans text-gray-800">
+      {/* Navigation */}
+      <nav className="sticky top-0 bg-white shadow-sm z-50">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="flex justify-center space-x-8 py-4">
+            <a href="#home" className="font-medium hover:text-gray-600 transition-colors">Home</a>
+            <a href="#education" className="font-medium hover:text-gray-600 transition-colors">Education</a>
+          </div>
         </div>
-    </section>
+      </nav>
 
-    <script>
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                document.querySelector(targetId).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-</body>
-</html>
+      {/* Main Content */}
+      <main className="max-w-5xl mx-auto px-4 py-8">
+        {/* Home Section */}
+        <section id="home" className="mb-12">
+          <h1 className="text-3xl font-bold mb-6">Zequn Xie (谢泽群)</h1>
+          
+          <div className="space-y-3">
+            <p>
+              <span className="font-semibold">Research Interests: </span>
+              Noisy Correspondence Learning, Cross-modal Retrieval, Generative Models
+            </p>
+            <p>
+              <span className="font-semibold">Address: </span>
+              Hangzhou, Zhejiang Province
+            </p>
+            <p>
+              <span className="font-semibold">Email: </span>
+              zqxie@zju.edu.cn
+            </p>
+          </div>
+        </section>
+
+        {/* Education Section */}
+        <section id="education" className="mb-12">
+          <h2 className="text-2xl font-bold mb-6">Education</h2>
+          
+          <div className="bg-white p-6 rounded-lg shadow-sm">
+            <div className="mb-4">
+              <h3 className="text-lg font-semibold">Master</h3>
+              <p className="text-gray-600">College of Computer Science, Zhejiang University</p>
+              <p className="text-gray-500 text-sm mt-1">Sept 2024 - July 2027 • Hangzhou, China</p>
+              <p className="text-gray-600 mt-2">
+                Supervised by Ph.D. Tao Jin and Prof. Zhou Zhao
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      {/* Footer with Counter */}
+      <footer className="border-t border-gray-200 mt-auto py-6">
+        <div className="flex flex-col items-center justify-center space-y-2">
+          <a 
+            href="https://www.easycounter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <img 
+              src="https://www.easycounter.com/counter.php?zexie" 
+              alt="Web Counter"
+              className="border-0"
+            />
+          </a>
+          <a 
+            href="https://www.easycounter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-500 hover:text-gray-700 text-sm"
+          >
+            Free Web Counters
+          </a>
+        </div>
+      </footer>
+    </div>
+  );
+}
