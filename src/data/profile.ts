@@ -223,7 +223,7 @@ export const publications: Publication[] = [
     linkLabels: {
       code: "GitHub",
       website: "Lessie AI",
-      productHunt: "Product Hunt #2 of the Day",
+      productHunt: "Product Hunt (2nd on launch day)",
     },
   },
   {

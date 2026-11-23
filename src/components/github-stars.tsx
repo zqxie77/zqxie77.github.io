@@ -40,7 +40,7 @@ export function GitHubStars({ repositoryUrl, initialCount }: GitHubStarsProps) {
       <span
         role="img"
         aria-label={`${formattedCount} stars`}
-        className="inline-block rounded-md border border-link/20 bg-link/5 px-1.5 py-0.5 align-middle text-[0.95em] leading-none font-bold whitespace-nowrap text-link tabular-nums"
+        className="whitespace-nowrap tabular-nums"
       >
         ★{"\u00a0"}{formattedCount}
       </span>
