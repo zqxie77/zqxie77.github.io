@@ -107,6 +107,11 @@
   }
 }
 
+/* Keep browser-injected DOI badges from breaking publication rows. */
+#publications .easyScholarDOI {
+  display: none;
+}
+
 @utility prose-link {
   color: var(--link);
   text-decoration-line: underline;

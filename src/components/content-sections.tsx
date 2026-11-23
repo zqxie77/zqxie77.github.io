@@ -180,7 +180,7 @@ export function PublicationsSection() {
         <sup>†</sup> denotes equal contribution. Full list on{" "}
         <ExternalLink href={profile.scholar}>Google Scholar</ExternalLink>.
       </p>
-      <ul className="list-disc space-y-2.5 pl-6">
+      <ul translate="no" className="notranslate list-disc space-y-2.5 pl-6">
         {publications.map((pub) => (
           <PublicationEntry key={pub.title} pub={pub} />
         ))}
