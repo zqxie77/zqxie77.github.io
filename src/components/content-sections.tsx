@@ -9,6 +9,7 @@ import {
   advisors,
   authorName,
   education,
+  honorsAndAwards,
   isCoFirst,
   news,
   profile,
@@ -208,6 +209,24 @@ export function EducationSection() {
             , {item.degree}, {item.department},{" "}
             <ExternalLink href={item.schoolUrl}>{item.school}</ExternalLink>. Advised by{" "}
             <AdvisorList />.
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+export function HonorsAndAwardsSection() {
+  return (
+    <section id="honors-and-awards" aria-labelledby="honors-and-awards-title">
+      <SectionTitle id="honors-and-awards" emoji="🎖">
+        Honors and Awards
+      </SectionTitle>
+      <ul className="list-disc space-y-1 pl-6">
+        {honorsAndAwards.map((item) => (
+          <li key={`${item.title}-${item.date}`}>
+            <time dateTime={item.date} className="italic">{item.date.replace("-", ".")}</time>{" "}
+            {item.title}, {item.institution}
           </li>
         ))}
       </ul>

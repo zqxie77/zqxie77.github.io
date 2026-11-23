@@ -16,6 +16,7 @@ const NAV_ITEMS = [
   { id: "news", label: "News" },
   { id: "publications", label: "Publications" },
   { id: "education", label: "Education" },
+  { id: "honors-and-awards", label: "Honors and Awards" },
   { id: "service", label: "Academic Service" },
 ] as const;
 

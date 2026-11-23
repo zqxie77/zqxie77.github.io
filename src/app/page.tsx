@@ -2,6 +2,7 @@ import { AuthorProfile } from "@/components/author-profile";
 import {
   AboutSection,
   EducationSection,
+  HonorsAndAwardsSection,
   NewsSection,
   PublicationsSection,
   ServiceSection,
@@ -20,6 +21,7 @@ export default function Home() {
           <NewsSection />
           <PublicationsSection />
           <EducationSection />
+          <HonorsAndAwardsSection />
           <ServiceSection />
         </main>
       </div>

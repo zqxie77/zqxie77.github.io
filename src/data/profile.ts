@@ -17,7 +17,7 @@ export const profile = {
     "Agentic Reinforcement Learning in complex interactive environments, with applications in tool-use, deep research, and code agents.",
   /** Venues named in the About Me paragraph. */
   highlightVenues: ["ACL", "EMNLP", "AAAI", "ICASSP", "ICME", "TOIS"],
-  lastUpdated: "2026-11-23",
+  lastUpdated: "2026-11-24",
   visitorCounter: {
     href: "https://www.easycounter.com/",
     src: "https://www.easycounter.com/counter.php?zexie",
@@ -73,6 +73,14 @@ export const education: EducationItem[] = [
     department: "College of Computer Science",
     school: "Zhejiang University",
     schoolUrl: "https://www.zju.edu.cn/",
+  },
+];
+
+export const honorsAndAwards = [
+  {
+    date: "2026-10",
+    title: "National Scholarship (Top 1%)",
+    institution: "Zhejiang University",
   },
 ];
 
