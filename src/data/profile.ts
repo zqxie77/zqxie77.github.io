@@ -105,7 +105,8 @@ export type Publication = {
   /** Where the title links to; defaults to `links.paper`. */
   url?: string;
   links: Partial<Record<LinkKind, string>>;
-  /** Enables a GitHub star count on the Code link, with this value as a fallback. */
+  linkLabels?: Partial<Record<LinkKind, string>>;
+  /** Enables a GitHub star count on the code link, with this value as a fallback. */
   githubStars?: number;
   /** Adds an expandable "BibTeX" entry with a copy button. */
   bibtex?: string;
@@ -217,7 +218,12 @@ export const publications: Publication[] = [
       paper: "https://aclanthology.org/2026.emnlp-industry.66/",
       code: "https://github.com/LessieAI/people-search-bench",
       website: "https://lessie.ai/",
-      productHunt: "https://www.producthunt.com/products/lessie-ai-2",
+      productHunt: "https://www.producthunt.com/products/lessie-ai-2/awards",
+    },
+    linkLabels: {
+      code: "GitHub",
+      website: "Lessie AI",
+      productHunt: "Product Hunt #2 of the Day",
     },
   },
   {

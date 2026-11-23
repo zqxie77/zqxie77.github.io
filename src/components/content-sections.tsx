@@ -155,7 +155,7 @@ function PublicationEntry({ pub }: { pub: Publication }) {
               <Fragment key={kind}>
                 {index > 0 ? " " : null}|&nbsp;
                 <ExternalLink href={pub.links[kind]!} className="prose-link font-bold">
-                  {LINK_LABELS[kind]}
+                  {pub.linkLabels?.[kind] ?? LINK_LABELS[kind]}
                   {kind === "code" && pub.githubStars !== undefined && (
                     <GitHubStars repositoryUrl={pub.links[kind]!} initialCount={pub.githubStars} />
                   )}
