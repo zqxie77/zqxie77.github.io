@@ -125,8 +125,10 @@ function Authors({ authors }: { authors: string[] }) {
     return (
       <Fragment key={`${name}-${i}`}>
         {i > 0 ? ", " : null}
-        {name === SELF_NAME ? <strong className="text-[#2f3437]">{name}</strong> : name}
-        {isCoFirst(author) ? <sup>†</sup> : null}
+        <span className="whitespace-nowrap">
+          {name === SELF_NAME ? <strong className="text-[#2f3437]">{name}</strong> : name}
+          {isCoFirst(author) ? <sup>†</sup> : null}
+        </span>
       </Fragment>
     );
   });
