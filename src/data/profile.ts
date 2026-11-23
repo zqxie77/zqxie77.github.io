@@ -16,7 +16,7 @@ export const profile = {
   researchSummary:
     "Agentic Reinforcement Learning in complex interactive environments, with applications in tool-use, deep research, and code agents.",
   /** Venues named in the About Me paragraph. */
-  highlightVenues: ["ACL", "EMNLP", "AAAI", "ICASSP", "ICME", "TOIS"],
+  highlightVenues: ["ACL", "EMNLP", "AAAI", "TOIS"],
   lastUpdated: "2026-11-24",
   visitorCounter: {
     href: "https://www.easycounter.com/",
