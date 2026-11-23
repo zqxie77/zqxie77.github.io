@@ -238,6 +238,27 @@ export const publications: Publication[] = [
   },
   {
     title:
+      "SlimSearcher: Training Efficiency-Aware Web Agents via Adaptive Reward Gating",
+    authors: [
+      "Zequn Xie†",
+      "Junjie Wang†",
+      "Dan Yang",
+      "Jie Feng",
+      "Yue Shen",
+      "Jian Wang",
+      "Jinjie Gu",
+    ],
+    venue: "EMNLP",
+    year: 2026,
+    track: "Findings",
+    type: "conference",
+    links: {
+      paper: "https://aclanthology.org/2026.findings-emnlp.517/",
+      code: "https://github.com/AQ-MedAI/AntAFu-DeepResearch",
+    },
+  },
+  {
+    title:
       "PeopleSearchBench: Evaluating AI-Powered People Search Platforms with Criteria-Grounded Verification",
     authors: [
       "Tianyu Shi",
@@ -254,11 +275,12 @@ export const publications: Publication[] = [
       "Zhenyu Yu",
       "Lei Ding",
     ],
-    venue: "Tech Report",
+    venue: "EMNLP",
     year: 2026,
-    type: "preprint",
+    track: "Industry",
+    type: "conference",
     links: {
-      paper: "https://arxiv.org/pdf/2603.27476v3",
+      paper: "https://aclanthology.org/2026.emnlp-industry.66/",
       code: "https://github.com/LessieAI/people-search-bench",
       website: "https://lessie.ai/",
       productHunt: "https://www.producthunt.com/products/lessie-ai-2",
