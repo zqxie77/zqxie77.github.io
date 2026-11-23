@@ -345,23 +345,6 @@ export const publications: Publication[] = [
     },
   },
   {
-    title:
-      "Integrated Planning and Machine-Level Scheduling for High-Mix Discrete Manufacturing: A Profit-Driven Heuristic Framework",
-    authors: [
-      "Rui Liu",
-      "Zhenyu Chen",
-      "Yifan Li",
-      "Zequn Xie",
-      "Peiyong Zhang",
-    ],
-    venue: "arXiv",
-    year: 2025,
-    type: "preprint",
-    links: {
-      paper: "https://arxiv.org/abs/2512.10358",
-    },
-  },
-  {
     title: "Chat-Driven Text Generation and Interaction for Person Retrieval",
     authors: [
       "Zequn Xie",

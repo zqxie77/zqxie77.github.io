@@ -162,18 +162,25 @@ function PublicationEntry({ pub }: { pub: Publication }) {
         <span className="font-medium text-[#2f3437]">{pub.title}</span>
       )}
       , <Authors authors={pub.authors} />
-      {links.map((kind) => (
-        <Fragment key={kind}>
-          {" | "}
-          <ExternalLink href={pub.links[kind]!} className="prose-link font-bold">
-            {LINK_LABELS[kind]}
-          </ExternalLink>
-        </Fragment>
-      ))}
-      {pub.bibtex ? (
+      {links.length > 0 || pub.bibtex ? (
         <>
-          {" | "}
-          <BibtexToggle bibtex={pub.bibtex} />
+          {" "}
+          <span className="inline-block max-w-full">
+            {links.map((kind, index) => (
+              <Fragment key={kind}>
+                {index > 0 ? " " : null}|&nbsp;
+                <ExternalLink href={pub.links[kind]!} className="prose-link font-bold">
+                  {LINK_LABELS[kind]}
+                </ExternalLink>
+              </Fragment>
+            ))}
+            {pub.bibtex ? (
+              <>
+                {links.length > 0 ? " " : null}|&nbsp;
+                <BibtexToggle bibtex={pub.bibtex} />
+              </>
+            ) : null}
+          </span>
         </>
       ) : null}
     </li>
