@@ -41,6 +41,7 @@ export const news: NewsItem[] = [
     date: "2026.10",
     text: "Serving as an **Area Chair** for ACL Rolling Review (ARR), October 2026.",
   },
+  { date: "2026.08", text: "🎉🎉 Two papers were accepted at **EMNLP 2026**." },
   {
     date: "2026.06",
     text: "🎉 One paper is accepted by **ACM Transactions on Information Systems (TOIS)**.",
@@ -286,6 +287,23 @@ export const publications: Publication[] = [
     },
   },
   {
+    title: "Chat-Driven Text Generation and Interaction for Person Retrieval",
+    authors: [
+      "Zequn Xie",
+      "Chuxin Wang",
+      "Sihang Cai",
+      "Shulei Wang",
+      "Tao Jin",
+    ],
+    venue: "EMNLP",
+    year: 2025,
+    track: "Main",
+    type: "conference",
+    links: {
+      paper: "https://aclanthology.org/2025.emnlp-main.266/",
+    },
+  },
+  {
     title:
       "Text-Guided Optimal Transport for Aerial-Ground Person Re-Identification",
     authors: ["Guijin Luo", "Zequn Xie", "Sihang Cai", "Ke Lei"],
@@ -365,23 +383,6 @@ export const publications: Publication[] = [
     links: {
       paper: "https://dl.acm.org/doi/10.1145/3831683",
       code: "https://github.com/zqxie77/DUNC",
-    },
-  },
-  {
-    title: "Chat-Driven Text Generation and Interaction for Person Retrieval",
-    authors: [
-      "Zequn Xie",
-      "Chuxin Wang",
-      "Sihang Cai",
-      "Shulei Wang",
-      "Tao Jin",
-    ],
-    venue: "EMNLP",
-    year: 2025,
-    track: "Main",
-    type: "conference",
-    links: {
-      paper: "https://aclanthology.org/2025.emnlp-main.266/",
     },
   },
 ];
