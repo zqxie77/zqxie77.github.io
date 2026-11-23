@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 
 import { BibtexToggle } from "@/components/bibtex-toggle";
+import { GitHubStars } from "@/components/github-stars";
 import {
   type LinkKind,
   type Publication,
@@ -154,6 +155,9 @@ function PublicationEntry({ pub }: { pub: Publication }) {
                 {index > 0 ? " " : null}|&nbsp;
                 <ExternalLink href={pub.links[kind]!} className="prose-link font-bold">
                   {LINK_LABELS[kind]}
+                  {kind === "code" && pub.githubStars !== undefined && (
+                    <GitHubStars repositoryUrl={pub.links[kind]!} initialCount={pub.githubStars} />
+                  )}
                 </ExternalLink>
               </Fragment>
             ))}
