@@ -82,6 +82,11 @@ export const honorsAndAwards = [
     title: "National Scholarship (Top 1%)",
     institution: "Zhejiang University",
   },
+  {
+    date: "2025-10",
+    title: "National Scholarship (Top 1%)",
+    institution: "Zhejiang University",
+  },
 ];
 
 export type LinkKind = "paper" | "code" | "website" | "productHunt";
