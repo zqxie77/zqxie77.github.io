@@ -96,6 +96,7 @@ export type Publication = {
   bibtex?: string;
 };
 
+/** Newest first by paper acceptance or model release date. */
 export const publications: Publication[] = [
   {
     title: "Hy4 flash",
@@ -153,6 +154,76 @@ export const publications: Publication[] = [
   howpublished = {\\url{https://huggingface.co/tencent/Hy4-preview}},
   note         = {Model release}
 }`,
+  },
+  {
+    title:
+      "SlimSearcher: Training Efficiency-Aware Web Agents via Adaptive Reward Gating",
+    authors: [
+      "Zequn Xie†",
+      "Junjie Wang†",
+      "Dan Yang",
+      "Jie Feng",
+      "Yue Shen",
+      "Jian Wang",
+      "Jinjie Gu",
+    ],
+    venue: "EMNLP",
+    year: 2026,
+    type: "conference",
+    links: {
+      paper: "https://aclanthology.org/2026.findings-emnlp.517/",
+      code: "https://github.com/AQ-MedAI/AntAFu-DeepResearch",
+    },
+  },
+  {
+    title:
+      "PeopleSearchBench: Evaluating AI-Powered People Search Platforms with Criteria-Grounded Verification",
+    authors: [
+      "Tianyu Shi",
+      "Wei Wang",
+      "Zequn Xie",
+      "Shuai Zhang",
+      "Boyang Xia",
+      "Chenyu Zeng",
+      "Qi Zhang",
+      "Lynn Ai",
+      "Yaqi Yu",
+      "Kaiming Zhang",
+      "Feiyue Tang",
+      "Zhenyu Yu",
+      "Lei Ding",
+    ],
+    venue: "EMNLP",
+    year: 2026,
+    track: "Industry",
+    type: "conference",
+    links: {
+      paper: "https://aclanthology.org/2026.emnlp-industry.66/",
+      code: "https://github.com/LessieAI/people-search-bench",
+      website: "https://lessie.ai/",
+      productHunt: "https://www.producthunt.com/products/lessie-ai-2",
+    },
+  },
+  {
+    title:
+      "Dynamic Uncertainty Learning with Noisy Correspondence for Text-based Person Retrieval",
+    authors: [
+      "Zequn Xie",
+      "Chuxin Wang",
+      "Sihang Cai",
+      "Fangming Feng",
+      "Guijin Luo",
+      "Qifei Zhang",
+      "Jingyuan Chen",
+      "Tao Jin",
+    ],
+    venue: "TOIS",
+    year: 2026,
+    type: "journal",
+    links: {
+      paper: "https://dl.acm.org/doi/10.1145/3831683",
+      code: "https://github.com/zqxie77/DUNC",
+    },
   },
   {
     title:
@@ -239,55 +310,6 @@ export const publications: Publication[] = [
   },
   {
     title:
-      "SlimSearcher: Training Efficiency-Aware Web Agents via Adaptive Reward Gating",
-    authors: [
-      "Zequn Xie†",
-      "Junjie Wang†",
-      "Dan Yang",
-      "Jie Feng",
-      "Yue Shen",
-      "Jian Wang",
-      "Jinjie Gu",
-    ],
-    venue: "EMNLP",
-    year: 2026,
-    type: "conference",
-    links: {
-      paper: "https://aclanthology.org/2026.findings-emnlp.517/",
-      code: "https://github.com/AQ-MedAI/AntAFu-DeepResearch",
-    },
-  },
-  {
-    title:
-      "PeopleSearchBench: Evaluating AI-Powered People Search Platforms with Criteria-Grounded Verification",
-    authors: [
-      "Tianyu Shi",
-      "Wei Wang",
-      "Zequn Xie",
-      "Shuai Zhang",
-      "Boyang Xia",
-      "Chenyu Zeng",
-      "Qi Zhang",
-      "Lynn Ai",
-      "Yaqi Yu",
-      "Kaiming Zhang",
-      "Feiyue Tang",
-      "Zhenyu Yu",
-      "Lei Ding",
-    ],
-    venue: "EMNLP",
-    year: 2026,
-    track: "Industry",
-    type: "conference",
-    links: {
-      paper: "https://aclanthology.org/2026.emnlp-industry.66/",
-      code: "https://github.com/LessieAI/people-search-bench",
-      website: "https://lessie.ai/",
-      productHunt: "https://www.producthunt.com/products/lessie-ai-2",
-    },
-  },
-  {
-    title:
       "Text-Guided Optimal Transport for Aerial-Ground Person Re-Identification",
     authors: ["Guijin Luo", "Zequn Xie", "Sihang Cai", "Ke Lei"],
     venue: "ICME",
@@ -346,27 +368,6 @@ export const publications: Publication[] = [
     year: 2026,
     type: "conference",
     links: {},
-  },
-  {
-    title:
-      "Dynamic Uncertainty Learning with Noisy Correspondence for Text-based Person Retrieval",
-    authors: [
-      "Zequn Xie",
-      "Chuxin Wang",
-      "Sihang Cai",
-      "Fangming Feng",
-      "Guijin Luo",
-      "Qifei Zhang",
-      "Jingyuan Chen",
-      "Tao Jin",
-    ],
-    venue: "TOIS",
-    year: 2026,
-    type: "journal",
-    links: {
-      paper: "https://dl.acm.org/doi/10.1145/3831683",
-      code: "https://github.com/zqxie77/DUNC",
-    },
   },
   {
     title: "Chat-Driven Text Generation and Interaction for Person Retrieval",
