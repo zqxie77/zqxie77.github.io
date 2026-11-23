@@ -101,7 +101,11 @@ export function NewsSection() {
       <SectionTitle id="news" emoji="🔥">
         News
       </SectionTitle>
-      <ul className="list-disc space-y-1 pl-6">
+      <ul
+        aria-label="News updates"
+        tabIndex={0}
+        className="max-h-32 list-disc space-y-1 overflow-y-auto pr-3 pl-6"
+      >
         {news.map((item, i) => (
           <li key={i}>
             <em>{item.date}</em>: &nbsp;
