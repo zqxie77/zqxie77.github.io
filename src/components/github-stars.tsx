@@ -33,9 +33,13 @@ export function GitHubStars({ repositoryUrl, initialCount }: GitHubStarsProps) {
   }, [repositoryUrl]);
 
   return (
-    <span className="whitespace-nowrap text-[0.85em] font-normal">
-      {" "}<span aria-hidden="true">★ </span>{count.toLocaleString("en-US")}
-      <span className="sr-only"> GitHub stars</span>
-    </span>
+    <>
+      {"\u00a0"}
+      <span className="inline-flex items-center gap-1 rounded-full border border-amber-300 bg-amber-100 px-1.5 py-0.5 align-middle text-[0.95em] leading-none font-bold text-amber-950 tabular-nums">
+        <span aria-hidden="true" className="text-amber-700">★</span>
+        {count.toLocaleString("en-US")}
+        <span className="sr-only"> GitHub stars</span>
+      </span>
+    </>
   );
 }
