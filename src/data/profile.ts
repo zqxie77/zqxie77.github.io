@@ -250,7 +250,6 @@ export const publications: Publication[] = [
     ],
     venue: "EMNLP",
     year: 2026,
-    track: "Findings",
     type: "conference",
     links: {
       paper: "https://aclanthology.org/2026.findings-emnlp.517/",
