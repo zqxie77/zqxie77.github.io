@@ -1,4 +1,3 @@
-import { GraduationCapIcon } from "lucide-react";
 import { Fragment } from "react";
 
 import { BibtexToggle } from "@/components/bibtex-toggle";
@@ -65,25 +64,8 @@ function AdvisorList() {
   ));
 }
 
-function ScholarBadge() {
-  return (
-    <a
-      href={profile.scholar}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex h-5 items-stretch overflow-hidden rounded-[3px] align-[-0.3em] text-[11px] leading-5 no-underline"
-    >
-      <span className="flex items-center gap-1 bg-[#f6f6f6] px-1.5 text-[#333]">
-        <GraduationCapIcon className="size-3 text-[#4285f4]" aria-hidden="true" />
-        Google Scholar
-      </span>
-      <span className="bg-[#99ccff] px-1.5 text-[#333]">Profile</span>
-    </a>
-  );
-}
-
 export function AboutSection() {
-  const venues = profile.highlightVenues;
+  const venues = new Intl.ListFormat("en").format(profile.highlightVenues);
   const school = education[0];
 
   return (
@@ -98,10 +80,7 @@ export function AboutSection() {
         complex interactive environments, with applications in tool-use, deep research,
         and code agents.
       </p>
-      <p>
-        I have published papers <ScholarBadge /> in venues such as{" "}
-        {venues.slice(0, -1).join(", ")} and {venues.at(-1)}.
-      </p>
+      <p>{`I have published in venues including ${venues}.`}</p>
       <p>
         Find my daily notes and updates on{" "}
         <ExternalLink href={profile.xiaohongshu}>Xiaohongshu</ExternalLink>. Feel free to
