@@ -17,7 +17,7 @@ export const profile = {
     "Agentic Reinforcement Learning in complex interactive environments, with applications in tool-use, deep research, and code agents.",
   /** Venues named in the About Me paragraph. */
   highlightVenues: ["ACL", "EMNLP", "AAAI", "TOIS"],
-  lastUpdated: "2026-11-24",
+  lastUpdated: "2026-11-25",
   visitorCounter: {
     href: "https://www.easycounter.com/",
     src: "https://www.easycounter.com/counter.php?zexie",
@@ -112,7 +112,7 @@ export type Publication = {
   bibtex?: string;
 };
 
-/** Newest first by paper acceptance or model release date. */
+/** Newest first by paper acceptance, preprint posting, or model release date. */
 export const publications: Publication[] = [
   {
     title: "Hy4 flash",
@@ -132,6 +132,28 @@ export const publications: Publication[] = [
   howpublished = {\\url{https://huggingface.co/tencent/Hy4-flash}},
   note         = {Model release}
 }`,
+  },
+  {
+    title: "From Delegation to Coordination: Learning Efficient Multi-Agent Deep Research",
+    authors: [
+      "Yuyang Wu†",
+      "Yang Liu†",
+      "Zequn Xie†",
+      "Junjie Wang",
+      "Dan Yang",
+      "Zhehao Tan",
+      "Ding-Chu Zhang",
+      "Junming Yang",
+      "Yue Shen",
+      "Jian Wang",
+      "Jinjie Gu",
+    ],
+    venue: "arXiv",
+    year: 2026,
+    type: "preprint",
+    links: {
+      paper: "https://arxiv.org/abs/2611.17041",
+    },
   },
   {
     title: "Hy4",
@@ -333,7 +355,7 @@ export const publications: Publication[] = [
   {
     title:
       "Text-Guided Optimal Transport for Aerial-Ground Person Re-Identification",
-    authors: ["Guijin Luo", "Zequn Xie", "Sihang Cai", "Ke Lei"],
+    authors: ["Guijin Luo†", "Zequn Xie†", "Sihang Cai", "Ke Lei"],
     venue: "ICME",
     year: 2026,
     highlight: "Spotlight",
